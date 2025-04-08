@@ -1,0 +1,219 @@
+
+* { /*change*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+  }
+  
+  /* General body styles - this is the default for anything inside the body*/
+  body {
+    font-family: Helvetica, sans-serif;
+    color: #0c0c0c;
+    background-color: white;
+  }
+
+  
+  /* Header style - 2025 F1 TEAMS & DRIVERS */
+  header {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(247, 23, 11, 1);
+    font-family: Arial, sans-serif;
+  }
+
+
+  
+  /* Main content area */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /*SECTION STYLING*/
+  #teams{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+ 
+  /*TEAM BOX STYLING*/
+  .team-box{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 195, 195, 0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+  }
+
+   /*Red Bull Team Box*/
+   .redbull{
+    background-image: url('images/redbull-logo.jpg');
+    background-color: #afb1c6; 
+    color: rgb(240, 243, 244);
+  }
+
+  .team-box.no-bg {
+    background-image: none !important;
+  }
+
+  .team-text.hidden,
+  .drivers-list{
+    display: none;
+  }
+
+  .team-box.active .team-text{
+    display: block;
+  }
+
+  .team-box.active .drivers-list{
+    display: block;
+    margin-top:10px;
+    padding-left: 0;
+  }
+
+  h2{
+    font-size: 1rem !important;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .team-text h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-decoration: underline;
+  }
+
+  .team-text h4 {
+    font-size: 1.0rem;
+    margin-bottom: 6px;
+    margin-top: 10px;
+  }
+
+  hr{
+    width:80%;
+    border: 1px solid transparent;
+    margin: 2ppx 0;
+  }
+  
+
+  /*McLaren Team Box*/
+  .mclaren{
+    background-image: url('images/mclaren-logo.jpg');
+    background-color: #e07a0d; 
+    color: rgb(5, 5, 5);
+  }
+
+  /*Mercedes Team Box*/
+  .mercedes{
+    background-image: url('images/mercedes-logo.png');
+    background-color: #0cc5c5; 
+    color: rgb(5, 5, 6);
+  }
+
+  /*Williams Team Box*/
+  .williams{
+    background-image: url('images/williams-logo.jpg');
+    background-color: #253197; 
+    color: rgb(240, 243, 244);
+    font-family: 'Arial Black', sans-serif;
+  }
+
+   /*Ferrari Team Box*/
+   .ferrari{
+    background-image: url('images/ferrari-logo.jpg');
+    background-color: red; 
+    color: black;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  
+
+  /*Aston Martin Team Box*/
+  .aston{
+    background-image: url('images/aston-logo.jpg');
+    background-color: #286b5b;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  /*Racing Bull Team Box*/
+  .vcarb{
+    background-image: url('images/vcarb-logo.jpg');
+    background-color: white;
+    color: blue;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  /*Sauber Team Box*/
+  .sauber{
+    background-image: url('images/sauber-logo.jpg');
+    background-color: #17ab23; 
+    color: rgb(8, 8, 8);
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  /*Alpine Team Box*/
+  .alpine{
+    background-image: url('images/alpine-logo.jpg');
+    background-color: #2470e1;
+    color: rgb(247, 96, 214);
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  /*HAAS Team Box*/
+  .haas{
+    background-image: url('images/haas-logo.jpg');
+    background-color: #650909;
+    color: rgb(247, 240, 240);
+    font-family: 'Arial Black', sans-serif;
+  }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      /*added from main*/
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(21 21 30, 1);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+      /* Navigation bar */
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
